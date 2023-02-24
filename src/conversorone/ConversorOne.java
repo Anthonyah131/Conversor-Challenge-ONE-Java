@@ -14,7 +14,7 @@ public class ConversorOne extends JFrame {
      */
     public static void main(String[] args) {
 
-        Object[] options = {"Conversor de monedas", "Conversor de medidas"};
+        Object[] options = {"Monedas", "Medidas"};
         boolean salir = false;
         do {
             Object choice = JOptionPane.showInputDialog(null, "Seleccione una opcion de conversión", "Menu", JOptionPane.QUESTION_MESSAGE, null, options, options[0]);
@@ -25,7 +25,7 @@ public class ConversorOne extends JFrame {
             }
 
             switch (choice.toString()) {
-                case "Conversor de monedas":
+                case "Monedas":
                     ConversorOneView op1 = new ConversorOneView();
                     if (op1.showConfirmDialog == 1 || op1.showConfirmDialog == 2) {
                         salir = true;
@@ -33,8 +33,12 @@ public class ConversorOne extends JFrame {
                     }
                     break;
 
-                case "Conversor de medidas":
-                    System.out.println("op2");
+                case "Medidas":
+                    ConversorOneMedidasView op2= new ConversorOneMedidasView();
+                    if (op2.showConfirmDialog == 1 || op2.showConfirmDialog == 2) {
+                        salir = true;
+                        JOptionPane.showMessageDialog(null, "Programa terminado");
+                    }
                     break;
 
                 default:

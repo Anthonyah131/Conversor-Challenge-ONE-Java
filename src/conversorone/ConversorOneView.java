@@ -54,7 +54,7 @@ public class ConversorOneView extends JFrame {
                     monto = Double.parseDouble(entrada);
                     bandera = false;
                 } catch (NumberFormatException e) {
-                    System.out.println("El valor no es un número válido.");
+                    JOptionPane.showMessageDialog(null, "El valor no es un número válido.");
                 }
             }
         } while (bandera);
@@ -63,102 +63,102 @@ public class ConversorOneView extends JFrame {
             switch (choice1 + " to " + choice2) {
                 case "USD to EUR":
                     resultado = monto * exchangeRateUSDToEUR;
-                    JOptionPane.showMessageDialog(null, String.format("%.2f", monto) + " USD equivalen a " + String.format("%.2f", resultado) + " EUR.");
+                    JOptionPane.showMessageDialog(null, String.format("%.2f ", monto) + " USD equivalen a " + String.format("%.2f", resultado) + " EUR.");
                     break;
 
                 case "USD to GBP":
                     resultado = monto * exchangeRateUSDToGBP;
-                    JOptionPane.showMessageDialog(null, String.format("%.2f", monto) + " USD equivalen a " + String.format("%.2f", resultado) + " GBP.");
+                    JOptionPane.showMessageDialog(null, String.format("%.2f ", monto) + " USD equivalen a " + String.format("%.2f", resultado) + " GBP.");
                     break;
 
                 case "USD to JPY":
                     resultado = monto * exchangeRateUSDToJPY;
-                    JOptionPane.showMessageDialog(null, String.format("%.2f", monto) + " USD equivalen a " + String.format("%.2f", resultado) + " JPY.");
+                    JOptionPane.showMessageDialog(null, String.format("%.2f ", monto) + " USD equivalen a " + String.format("%.2f", resultado) + " JPY.");
                     break;
 
                 case "USD to KRW":
                     resultado = monto * exchangeRateUSDToKRW;
-                    JOptionPane.showMessageDialog(null, String.format("%.2f", monto) + " USD equivalen a " + String.format("%.2f", resultado) + " KRW.");
+                    JOptionPane.showMessageDialog(null, String.format("%.2f ", monto) + " USD equivalen a " + String.format("%.2f", resultado) + " KRW.");
                     break;
 
                 case "GBP to USD":
                     resultado = monto / exchangeRateUSDToGBP;
-                    JOptionPane.showMessageDialog(null, String.format("%.2f", monto) + " GBP equivalen a " + String.format("%.2f", resultado) + " USD.");
+                    JOptionPane.showMessageDialog(null, String.format("%.2f ", monto) + " GBP equivalen a " + String.format("%.2f", resultado) + " USD.");
                     break;
 
                 case "GBP to EUR":
                     resultado = monto / exchangeRateEURToGBP;
-                    JOptionPane.showMessageDialog(null, String.format("%.2f", monto) + " GBP equivalen a " + String.format("%.2f", resultado) + " EUR.");
+                    JOptionPane.showMessageDialog(null, String.format("%.2f ", monto) + " GBP equivalen a " + String.format("%.2f", resultado) + " EUR.");
                     break;
 
                 case "GBP to JPY":
                     resultado = monto * exchangeRateGBPToJPY;
-                    JOptionPane.showMessageDialog(null, String.format("%.2f", monto) + " GBP equivalen a " + String.format("%.2f", resultado) + " JPY.");
+                    JOptionPane.showMessageDialog(null, String.format("%.2f ", monto) + " GBP equivalen a " + String.format("%.2f", resultado) + " JPY.");
                     break;
 
                 case "GBP to KRW":
                     resultado = monto * exchangeRateGBPToKRW;
-                    JOptionPane.showMessageDialog(null, String.format("%.2f", monto) + " GBP equivalen a " + String.format("%.2f", resultado) + " KRW.");
+                    JOptionPane.showMessageDialog(null, String.format("%.2f ", monto) + " GBP equivalen a " + String.format("%.2f", resultado) + " KRW.");
                     break;
 
                 case "EUR to USD":
                     resultado = monto / exchangeRateUSDToEUR;
-                    JOptionPane.showMessageDialog(null, String.format("%.2f", monto) + " EUR equivalen a " + String.format("%.2f", resultado) + " USD.");
+                    JOptionPane.showMessageDialog(null, String.format("%.2f ", monto) + " EUR equivalen a " + String.format("%.2f", resultado) + " USD.");
                     break;
 
                 case "EUR to GBP":
                     resultado = monto * exchangeRateEURToGBP;
-                    JOptionPane.showMessageDialog(null, String.format("%.2f", monto) + " EUR equivalen a " + String.format("%.2f", resultado) + " GBP.");
+                    JOptionPane.showMessageDialog(null, String.format("%.2f ", monto) + " EUR equivalen a " + String.format("%.2f", resultado) + " GBP.");
                     break;
 
                 case "EUR to JPY":
                     resultado = monto * exchangeRateEURToJPY;
-                    JOptionPane.showMessageDialog(null, String.format("%.2f", monto) + " EUR equivalen a " + String.format("%.2f", resultado) + " JPY.");
+                    JOptionPane.showMessageDialog(null, String.format("%.2f ", monto) + " EUR equivalen a " + String.format("%.2f", resultado) + " JPY.");
                     break;
 
                 case "EUR to KRW":
                     resultado = monto * exchangeRateEURToKRW;
-                    JOptionPane.showMessageDialog(null, String.format("%.2f", monto) + " EUR equivalen a " + String.format("%.2f", resultado) + " KRW.");
+                    JOptionPane.showMessageDialog(null, String.format("%.2f ", monto) + " EUR equivalen a " + String.format("%.2f", resultado) + " KRW.");
                     break;
 
                 case "JPY to USD":
                     resultado = monto / exchangeRateUSDToJPY;
-                    JOptionPane.showMessageDialog(null, String.format("%.2f", monto) + " JPY equivalen a " + String.format("%.2f", resultado) + " USD.");
+                    JOptionPane.showMessageDialog(null, String.format("%.2f ", monto) + " JPY equivalen a " + String.format("%.2f", resultado) + " USD.");
                     break;
 
                 case "JPY to EUR":
                     resultado = monto / exchangeRateEURToJPY;
-                    JOptionPane.showMessageDialog(null, String.format("%.2f", monto) + " JPY equivalen a " + String.format("%.2f", resultado) + " EUR.");
+                    JOptionPane.showMessageDialog(null, String.format("%.2f ", monto) + " JPY equivalen a " + String.format("%.2f", resultado) + " EUR.");
                     break;
 
                 case "JPY to GBP":
                     resultado = monto / exchangeRateGBPToJPY;
-                    JOptionPane.showMessageDialog(null, String.format("%.2f", monto) + " JPY equivalen a " + String.format("%.2f", resultado) + " GBP.");
+                    JOptionPane.showMessageDialog(null, String.format("%.2f ", monto) + " JPY equivalen a " + String.format("%.2f", resultado) + " GBP.");
                     break;
 
                 case "JPY to KRW":
                     resultado = monto * exchangeRateJPYToKRW;
-                    JOptionPane.showMessageDialog(null, String.format("%.2f", monto) + " JPY equivalen a " + String.format("%.2f", resultado) + " KRW.");
+                    JOptionPane.showMessageDialog(null, String.format("%.2f ", monto) + " JPY equivalen a " + String.format("%.2f", resultado) + " KRW.");
                     break;
 
                 case "KRW to USD":
                     resultado = monto / exchangeRateUSDToKRW;
-                    JOptionPane.showMessageDialog(null, String.format("%.2f", monto) + " KRW equivalen a " + String.format("%.2f", resultado) + " USD.");
+                    JOptionPane.showMessageDialog(null, String.format("%.2f ", monto) + " KRW equivalen a " + String.format("%.2f", resultado) + " USD.");
                     break;
 
                 case "KRW to EUR":
                     resultado = monto / exchangeRateEURToKRW;
-                    JOptionPane.showMessageDialog(null, String.format("%.2f", monto) + " KRW equivalen a " + String.format("%.2f", resultado) + " EUR.");
+                    JOptionPane.showMessageDialog(null, String.format("%.2f ", monto) + " KRW equivalen a " + String.format("%.2f", resultado) + " EUR.");
                     break;
 
                 case "KRW to GBP":
                     resultado = monto / exchangeRateGBPToKRW;
-                    JOptionPane.showMessageDialog(null, String.format("%.2f", monto) + " KRW equivalen a " + String.format("%.2f", resultado) + " GBP.");
+                    JOptionPane.showMessageDialog(null, String.format("%.2f ", monto) + " KRW equivalen a " + String.format("%.2f", resultado) + " GBP.");
                     break;
 
                 case "KRW to JPY":
                     resultado = monto / exchangeRateJPYToKRW;
-                    JOptionPane.showMessageDialog(null, String.format("%.2f", monto) + " KRW equivalen a " + String.format("%.2f", resultado) + " JPY.");
+                    JOptionPane.showMessageDialog(null, String.format("%.2f ", monto) + " KRW equivalen a " + String.format("%.2f", resultado) + " JPY.");
                     break;
 
                 default:

@@ -13,17 +13,6 @@ import javax.swing.JOptionPane;
  */
 public class ConversorOneMedidasView extends JFrame {
 
-    double exchangeRateSameCurrency = 1;
-    double exchangeRateUSDToEUR = 0.94;
-    double exchangeRateUSDToGBP = 0.83;
-    double exchangeRateUSDToJPY = 134.44;
-    double exchangeRateUSDToKRW = 1295.18;
-    double exchangeRateEURToGBP = 0.89;
-    double exchangeRateEURToJPY = 143.54;
-    double exchangeRateEURToKRW = 1382.38;
-    double exchangeRateGBPToJPY = 161.71;
-    double exchangeRateGBPToKRW = 1557.79;
-    double exchangeRateJPYToKRW = 9.63;
     public int showConfirmDialog = 0;
 
     public ConversorOneMedidasView() {
@@ -60,10 +49,8 @@ public class ConversorOneMedidasView extends JFrame {
         } while (bandera);
 
         if (monto != 0) {
-            double resultadoMetros = monto;
-            if(!"M".equals(choice1.toString()))
-                resultadoMetros = convertirAMetros(monto, choice1.toString());
-            
+            double resultadoMetros = convertirAMetros(monto, choice1.toString());
+
             switch (choice2.toString()) {
                 case "KM":
                     resultado = convertirAKilometros(resultadoMetros);
@@ -107,7 +94,7 @@ public class ConversorOneMedidasView extends JFrame {
 
         showConfirmDialog = JOptionPane.showConfirmDialog(null, "¿Desea continuar con el programa?");
     }
-    
+
     public static double convertirAMetros(double longitud, String unidadOrigen) {
         switch (unidadOrigen) {
             case "KM":
@@ -129,7 +116,7 @@ public class ConversorOneMedidasView extends JFrame {
                 return 0;
         }
     }
-    
+
     public static double convertirAKilometros(double longitud) {
         return longitud / 1000.0;
     }

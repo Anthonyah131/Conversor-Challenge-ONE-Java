@@ -24,6 +24,10 @@
 
 ***El convertidor de longitudes***
 
+## Insignia por concluir el challenge
+
+![Insignia](https://d335luupugsy2.cloudfront.net/cms%2Ffiles%2F10224%2F1671211831Prancheta_8.png?utm_campaign=alura_latam_-_challenge_email_projeto_5_esp&utm_medium=email&utm_source=RD+Station)
+
 ## Imagenes
 
 ![Menu](./ReadmeImg/Menu.png)
